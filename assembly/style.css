@@ -28,11 +28,9 @@ body {
   text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 1em rgb(255, 0, 0),
     0 0 0.2em rgb(255, 0, 0);
 }
-.main:hover .main-1{
-display: block;
-}
+
 .main-1 {
-  display: none;
+
   font-family: dfnt;
   font-size: 12rem;
   font-weight: lighter;
@@ -81,6 +79,9 @@ a {
   margin: 300px;
   padding: 2px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em blue, 0 0 0.2em blue;
+}
+a:hover{
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em red, 0 0 0.2em red;
 }
 .prayer-main-txt {
   font-size: 10rem;
