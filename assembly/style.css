@@ -2,10 +2,12 @@
   font-family: dfnt;
   src: url(./assets/DancingScript-VariableFont_wght.ttf);
 }
+
 @font-face {
   font-family: cfnt;
   src: url(./assets/Poppins-Regular.ttf);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -15,22 +17,28 @@ html,
 body {
   font-family: dfnt;
   text-align: center;
-  font-size: 10px;
+  font-size: 6px;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
 .main {
   font-family: dfnt;
   font-size: 10rem;
   font-weight: lighter;
+  margin-top: 10px;
   text-shadow: 1px 1px 2px rgb(255, 17, 0);
-  margin-top: 100px;
   animation: text 1s 1;
   text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 1em rgb(255, 0, 0),
     0 0 0.2em rgb(255, 0, 0);
 }
 
 .main-1 {
-
   font-family: dfnt;
   font-size: 12rem;
   font-weight: lighter;
@@ -38,28 +46,26 @@ body {
   justify-content: center;
   animation: text 0.5s 1;
 }
+
 .prayer-main {
   position: relative;
-  margin-top: 50px;
-  margin-left: 570px;
+  margin-top: 20px;
   text-align: center;
-  width: 40vw;
-  height: 500px;
-  background-color: rgb(255, 255, 255);
+  width: fit-content;
   border-radius: 20px;
+  height: max-content;
   box-sizing: border-box;
+  padding: 20px 20px;
   border: 2px solid rgb(245, 172, 172);
-  animation: main 2s 1;
-  box-shadow: inset 0 0 10px black, 0 0 10px 2px rgb(0, 0, 0);
+  /* animation: main 2s 1; */
+  box-shadow: inset 0 0 10px black, 0 0 20px 0.2px rgb(0, 0, 0);
 }
 
 .prayer-main1 {
   position: relative;
   margin-top: 50px;
-  margin-left: 570px;
   text-align: center;
-  width: 40vw;
-  height: 650px;
+  width: 50vw;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   box-sizing: border-box;
@@ -68,46 +74,56 @@ body {
 }
 
 footer {
-  position: absolute;
-  margin-left: 300px;
-  bottom: 10px;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+
 }
+
 a {
+  position: relative;
   text-decoration: none;
   color: aliceblue;
   font-size: 3rem;
-  margin: 300px;
-  padding: 2px;
-  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em blue, 0 0 0.2em blue;
+  margin: 0px 10px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
-a:hover{
-  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em red, 0 0 0.2em red;
+
+a:hover {
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(2, 45, 85), 0 0 0.2em rgb(119, 0, 255);
 }
+
 .prayer-main-txt {
-  font-size: 10rem;
-  margin-top: 30px;
+  font-size: 12rem;
   animation: text3 1.5s 1;
 }
+
 .p-txt {
-  padding-top: 20px;
-  padding-left: 20px;
-  position: absolute;
   font-size: 3.5rem;
   font-family: cfnt;
   font-weight: 300;
 }
+
 .p-txt:hover {
   text-shadow: 1px 1px 2px rgb(212, 206, 206), 0 0 1em rgb(82, 81, 81),
     0 0 0.2em rgb(187, 180, 180);
 }
+
 .serp-mtxt {
   font-size: 10rem;
   animation: text3 1.5s 1;
 }
+
 .serp-mtxt1 {
   font-size: 5rem;
   animation: name 2s 1;
 }
+
 .main-2 {
   color: rgb(228, 252, 217);
   font-family: dfnt;
@@ -118,78 +134,88 @@ a:hover{
   text-shadow: 1px 1px 2px rgba(195, 0, 255, 0.541), 0 0 1em rgb(255, 0, 0),
     0 0 0.2em rgb(255, 0, 0);
 }
+
 .main-1 {
   text-shadow: 1px 1px 2px rgb(208, 255, 0), 0 0 1em rgb(102, 255, 0),
     0 0 0.2em rgb(103, 255, 2);
 }
+
 .serp-mtxtt {
   font-size: 6rem;
   animation: text3 1.5s 1;
 }
+
 .serp-mtxt12 {
   font-size: 7rem;
   animation: text3 1.5s 1;
 }
+
 .serp-mtxttn {
-  margin-top: 350px;
+
   font-size: 10rem;
   animation: text3 1.5s 1;
   text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(71, 52, 52),
     0 0 0.2em rgb(0, 255, 191);
 }
+
 .serp-mtxttn1 {
-  margin-top: 350px;
   font-size: 10rem;
   animation: text3 1.5s 1;
   text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(71, 52, 52),
     0 0 0.2em rgb(255, 123, 0);
 }
+
 .serp-mtxttn2 {
-  margin-top: 350px;
   font-size: 10rem;
   animation: text3 1.5s 1;
   text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(71, 52, 52),
     0 0 0.2em rgb(255, 251, 0);
 }
+
 .serp-mtxttn3 {
-  margin-top: 350px;
   font-size: 10rem;
   animation: text3 1.5s 1;
   text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(71, 52, 52),
     0 0 0.2em rgb(255, 95, 95);
 }
+
 .serp-mtxttn4 {
-  margin-top: 350px;
   font-size: 10rem;
   text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(71, 52, 52),
     0 0 0.2em rgb(0, 255, 106);
 }
+
 .p-txt12 {
+  width: 500px;
   padding-top: 20px;
   padding-left: 20px;
-  position: absolute;
   font-size: 2.5rem;
   font-family: cfnt;
   font-weight: 300;
 }
+
 .p-txt12:hover {
   text-shadow: 1px 1px 2px rgb(212, 206, 206), 0 0 1em rgb(82, 81, 81),
     0 0 0.2em rgb(187, 180, 180);
 }
+
 .int {
   margin-top: 100px;
   font-size: 5rem;
   color: rgb(247, 82, 82);
   animation: text1 2s 1;
 }
+
 code {
   color: black;
   animation: text1 2.5s 1;
 }
+
 #datetime {
   font-family: dfnt;
   font-size: 3rem;
 }
+
 .d {
   font-family: dfnt;
   font-size: 3rem;
@@ -200,16 +226,19 @@ code {
     color: white;
     font-size: 5rem;
   }
+
   30% {
     letter-spacing: 20px;
   }
-  70% {
-  }
+
+  70% {}
 }
+
 @keyframes text1 {
   0% {
     color: white;
   }
+
   30% {
     color: white;
   }
@@ -219,6 +248,7 @@ code {
   0% {
     color: white;
   }
+
   50% {
     letter-spacing: 5px;
   }
@@ -229,6 +259,7 @@ code {
     color: white;
     margin-top: -60px;
   }
+
   20% {
     color: white;
   }
@@ -238,27 +269,42 @@ code {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   95% {
     opacity: 0;
   }
 }
+
 @keyframes player {
   0% {
     height: 100px;
     width: 200px;
   }
+
   30% {
     height: 200px;
     width: 350px;
   }
+
   50% {
     height: 180px;
     width: 320px;
+    transition: 2s;
   }
 }
+
 .player {
   animation: player 2s 1;
+  width: auto;
+  height: auto;
+}
+@media screen and (max-width: 500px) {
+  .player{
+    height: auto;
+    width: 100vw;
+  }
 }
