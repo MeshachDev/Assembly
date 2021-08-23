@@ -31,10 +31,9 @@ body {
   font-family: dfnt;
   font-size: 10rem;
   font-weight: lighter;
-  margin-top: 10px;
-  text-shadow: 1px 1px 2px rgb(255, 17, 0);
+  text-shadow: 1px 1px 2px rgb(255, 125, 116);
   animation: text 1s 1;
-  text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 1em rgb(255, 0, 0),
+  text-shadow: 1px 1px 2px rgb(255, 147, 147), 0 0 1em rgb(255, 0, 0),
     0 0 0.2em rgb(255, 0, 0);
 }
 
@@ -44,7 +43,8 @@ body {
   font-weight: lighter;
   text-shadow: 1px 1px 2px rgb(179, 255, 0);
   justify-content: center;
-  animation: text 0.5s 1;
+  margin-top: 20px;
+  animation: text 1.5s 1;
 }
 
 .prayer-main {
@@ -57,8 +57,8 @@ body {
   box-sizing: border-box;
   padding: 20px 20px;
   border: 2px solid rgb(245, 172, 172);
-  /* animation: main 2s 1; */
-  box-shadow: inset 0 0 10px black, 0 0 20px 0.2px rgb(0, 0, 0);
+  animation:ease-in main 1s 1;
+  box-shadow: inset 0 0 10px black, 0 0 20px 0.2px rgba(0, 0, 0, 0.564);
 }
 
 .prayer-main1 {
@@ -125,14 +125,15 @@ a:hover {
 }
 
 .main-2 {
-  color: rgb(228, 252, 217);
+  color: rgb(200, 250, 202);
   font-family: dfnt;
   font-size: 20rem;
   font-weight: lighter;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   text-shadow: 1px 1px 2px rgba(195, 0, 255, 0.541), 0 0 1em rgb(255, 0, 0),
     0 0 0.2em rgb(255, 0, 0);
+    animation: names 0.5s 1;
 }
 
 .main-1 {
@@ -186,9 +187,7 @@ a:hover {
 }
 
 .p-txt12 {
-  width: 500px;
-  padding-top: 20px;
-  padding-left: 20px;
+  max-width: 650px;
   font-size: 2.5rem;
   font-family: cfnt;
   font-weight: 300;
@@ -200,7 +199,7 @@ a:hover {
 }
 
 .int {
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 5rem;
   color: rgb(247, 82, 82);
   animation: text1 2s 1;
@@ -252,6 +251,9 @@ code {
   50% {
     letter-spacing: 5px;
   }
+  80%{
+    
+  }
 }
 
 @keyframes name {
@@ -265,6 +267,16 @@ code {
   }
 }
 
+@keyframes names {
+  0% {
+    color: white;
+    margin-top: -10px;
+  }
+
+  20% {
+    color: white;
+  }
+}
 @keyframes main {
   0% {
     opacity: 0;
@@ -299,12 +311,64 @@ code {
 
 .player {
   animation: player 2s 1;
-  width: auto;
+  width: 60vw;
   height: auto;
 }
 @media screen and (max-width: 500px) {
   .player{
-    height: auto;
+    height:auto;
     width: 100vw;
   }
+}
+.prayer-main{
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.prayer-main-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding:20px 20px;  
+}
+
+.prayer-main:hover .prayer-main-inner {
+  transform: rotateY(180deg);
+}
+
+.prayer-main-front, .prayer-main-back {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.prayer-main-front{
+  position: absolute;
+}
+.prayer-main-front .p-txt{
+  margin-left: -35px;
+}
+
+.prayer-main-back {
+  transform: rotateY(180deg);
+}
+
+.spl{
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(71, 52, 52),
+    0 0 0.2em rgb(0, 255, 191);
+}
+
+.main-bg{
+  background-image: url("./assets/1090734.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
